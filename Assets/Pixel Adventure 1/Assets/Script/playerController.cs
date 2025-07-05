@@ -47,6 +47,7 @@ public class playerController : MonoBehaviour
         {
             jumpPressed = true;
             anim.SetBool("jump", true);
+            FindObjectOfType<SoundManager>().PlayJump();
         }
 
         //xử lý animtor khi rơi
